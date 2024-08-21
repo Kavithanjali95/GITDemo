@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.svm.lrp</groupId>
+    <artifactId>bkdcbean</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>bkdcbean</name>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <properties>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <serverpath>~~Wildflyhome~~</serverpath>
+        <referencepath>D:\SVM\Library Dependencies</referencepath>
+        <productlibpath>D:\SVM\Library Dependencies</productlibpath>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.mycompany</groupId>
+            <artifactId>bkdejb</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\javaee-web-api-7.0.jar</systemPath>
+        </dependency>
+ 
+    
+        <dependency>
+            <groupId>JsonUtil.jar</groupId>
+            <artifactId>JsonUtil.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${productlibpath}/JsonUtil.jar</systemPath>
+        </dependency>
+       <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>6.0</version>
+            <scope>system</scope>
+            <systemPath>${productlibpath}/primefaces-6.0.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.svm.jsf.nfr.module</groupId>
+            <artifactId>ModuleAlias</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\ModuleAlias.jar</systemPath>
+        </dependency> 
+        
+        <dependency>
+            <groupId>com.svm.lrp.nfr</groupId>
+            <artifactId>autocomplete</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\autocomplete.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.svm.lrp.nfr</groupId>
+            <artifactId>autocompleteejb</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\autocompleteejb.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.svm.lrp.nfr</groupId>
+            <artifactId>autocompleteNew</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\autocompleteNew.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.svm.jsf.utils</groupId>
+            <artifactId>jsfutils</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\JSFUtils.jar</systemPath>
+        </dependency> 
+
+        <!-- poi jar-->
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.9</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\poi-3.16-beta2.jar</systemPath>
+        </dependency>
+
+        <!-- jep jars -->
+
+        <dependency>
+            <groupId>org.lsmp.djep</groupId>
+            <artifactId>djep</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\djep-1.0.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.nfunk.jep</groupId>
+            <artifactId>jep</artifactId>
+            <version>2.3</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\jep-2.3.0.jar</systemPath>
+        </dependency>
+
+        <!-- Primefaces jar -->
+
+        <!-- Compress API -->
+
+        <dependency>
+            <groupId>solverminds.compress</groupId>
+            <artifactId>compressapi</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\CompressAPI.jar</systemPath>
+        </dependency>
+
+        <!-- server utils jar -->
+
+        <dependency>
+            <groupId>lrp.serverutils.refs</groupId>
+            <artifactId>serverutils</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\serverutils.jar</systemPath>
+        </dependency>
+
+        <!-- LRPUtils -->
+
+        <dependency>
+            <groupId>com.svm.lrp.nfr</groupId>
+            <artifactId>lrputils</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\LRPUtils.jar</systemPath>
+        </dependency>
+
+
+        <!-- SMdialog -->
+
+        <dependency>
+            <groupId>com.svm.lrp.nfr.smdialog</groupId>
+            <artifactId>smdialog</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\smdialog.jar</systemPath>
+        </dependency>
+
+        <!-- Custom Scope -->
+
+        <dependency>
+            <groupId>com.svm.lrp.jsf.context.scope</groupId>
+            <artifactId>customscope</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\customscope.jar</systemPath>
+        </dependency>
+
+        <!-- Import excel-->
+
+        <dependency>
+            <groupId>com.svm.nfr.excel.lib</groupId>
+            <artifactId>importexcel</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\importExcel.jar</systemPath>
+        </dependency>
+
+        <!-- Smc -->
+
+        <dependency>
+            <groupId>com.svm.lrp.jsf.component</groupId>
+            <artifactId>smc</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\smc.jar</systemPath>
+        </dependency>
+
+        <!-- SmcNew + ExportExcel -->
+
+        <dependency>
+            <groupId>com.svm.lrp.jsf.component</groupId>
+            <artifactId>smcnew</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\smcnew.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.svm.lrp.nfr.main.bean</groupId>
+            <artifactId>ToolbarCBean</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\toolbarc.jar</systemPath>
+        </dependency>
+       
+
+        <!-- Searchcomponents -->
+
+        <dependency>
+            <groupId>com.svm.lrp.exp</groupId>
+            <artifactId>searchcomponents</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${referencepath}\searchcomponents.jar</systemPath>
+        </dependency>
+       
+        <dependency>
+            <groupId>com.svm.lrp.exp</groupId>
+            <artifactId>bkdejb</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>    
+            <systemPath>C:\Users\Kavithanjali.m\Documents\NetBeansProjects\bkdejb\target\bkdejb.jar
+</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>bkdcbean</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <compilerArguments>
+                        <endorseddirs>${endorsed.dir}</endorseddirs>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+            
+            <!--Added by Mahendiran -->            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>2.1.1</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>effective-pom</goal>
+                        </goals>
+                        <configuration>           
+                            <output>${project.build.outputDirectory}/META-INF/resources/${project.version}</output>
+           
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <plugin>  
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>                   
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/META-INF/resources</outputDirectory>
+                            <resources>         
+                                <resource>
+                                    <directory>/src/main/webapp</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>             
+                        </configuration> 
+                    </execution>
+                </executions>
+            </plugin>
+            
+            
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${endorsed.dir}</outputDirectory>
+                            <silent>true</silent>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>javax</groupId>
+                                    <artifactId>javaee-endorsed-api</artifactId>
+                                    <version>7.0</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

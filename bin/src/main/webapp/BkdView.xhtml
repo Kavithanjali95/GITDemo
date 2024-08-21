@@ -1,0 +1,123 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:svm="http://java.sun.com/jsf/composite/svm"
+                xmlns:lrp="http://solverminds.com/jsf/component"
+                xmlns:pe="http://primefaces.org/ui/extensions"> 
+
+    <h:form id="Bkd" prependId="true" styleClass="ui-g-12 uiy-lg-12 ui-md-12 sm-padding0px sm-margin0-auto">
+        <f:loadBundle basename="com.svm.lrp.icons.icon" var="icon"/>   
+        <div class="ui-g-12 ui-lg-12 ui-md-12"></div>
+
+        <p:panel id="Bkdid"  styleClass="ui-g-12 ui-lg-12 ui-md-12 sm-padding5 sm-margin-top0">            
+            <svm:ToolBar objref="#{BKDCbean.object}"  update="Bkd" id="tbl"  toolbar="#{BKDCbean.toolBarBean}"/>  
+        </p:panel>           
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="Booknumber" value="Book No:" style=" position: absolute"/>  
+            <p:inputText id="BookNo1" value="#{BKDCbean.model.BKDUIDataModel.booknumber}" disabled="#{BKDCbean.model.BKDUIStateModel.booknumber}" styleClass="sm-mandatory-component" maxlength="10" readonly="false" style="position: relative; left:100px"></p:inputText>
+        </div>
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+
+
+            <p:outputLabel id="Amount" value="Amount:" style=" position:  relative" />
+            <p:inputText id="Amount1" value="#{BKDCbean.model.BKDUIDataModel.amount}" disabled="#{BKDCbean.model.BKDUIStateModel.amount}" styleClass="sm-mandatory-component" maxlength="4" readonly="false" style="position: relative; left:30px"></p:inputText>
+        </div>
+
+        <div class="ui-g-12 ui-lg-6 ui-md-12 sm-padding0 sm-margin-top0">
+
+            <p:outputLabel id="TotalPrepaidCount" value="TotalPrepaidCount:" style=" position:  relative"/>
+            <p:inputText id="TotalPrepaidCount1" value="#{BKDCbean.model.BKDUIDataModel.totalprepaidcount}" disabled="#{BKDCbean.model.BKDUIStateModel.totalprepaidcount}" styleClass="sm-mandatory-component" maxlength="4" readonly="True" style="position: relative; left: 25px"></p:inputText>    
+
+        </div>
+
+
+
+        <div class="ui-g-12 ui-lg-12 ui-md-12"></div>
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="ContainerNo" value="Container No:" style=" position:  relative"/>
+            <p:inputText id="containerNo1" value="#{BKDCbean.model.BKDUIDataModel.containerno}" disabled="#{BKDCbean.model.BKDUIStateModel.containerno}" styleClass="sm-mandatory-component" maxlength="4" readonly="false" style="position: relative; left:29px"></p:inputText>
+        </div>
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="Paymode" value="Paymode:" />
+            <p:selectOneMenu id="Paymode1" rendered ="true" value="#{BKDCbean.model.BKDUIDataModel.paymode}" disabled="#{BKDCbean.model.BKDUIStateModel.paymode}" style=" left: 22px; width: 165px">                      
+                <f:selectItem itemLabel="Prepaid"  itemValue="Prepaid"/>
+                <f:selectItem itemLabel="Collect" itemValue="Collect"/>
+                <f:selectItem itemLabel="PayAt" itemValue="PayAt"/>
+            </p:selectOneMenu>
+        </div>
+        <div class="ui-g-12 ui-lg-6 ui-md-12 sm-padding0 sm-margin-top0">
+
+            <p:outputLabel id="TotalCollectCount" value="TotalCollectCount:" style=" position:  relative"/>
+            <p:inputText id="TotalCollectCount1" value="#{BKDCbean.model.BKDUIDataModel.totalcollectcount}" disabled="#{BKDCbean.model.BKDUIStateModel.totalcollectcount}" styleClass="sm-mandatory-component" maxlength="4" readonly="True" style="position: relative; left: 30px"></p:inputText>   
+
+        </div>
+
+        <div class="ui-g-12 ui-lg-12 ui-md-12"></div>
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="Commodity" value="Commodity:" style=" position:relative"/>
+            <p:inputText id="Commodity1" value="#{BKDCbean.model.BKDUIDataModel.commodity}" disabled="#{BKDCbean.model.BKDUIStateModel.commodity}" styleClass="sm-mandatory-component" maxlength="14" readonly="false" style="position: relative; left:36px"></p:inputText>
+        </div>
+
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="paylocation" value="paylocation:" style=" position:  relative"/>
+            <p:inputText id="paylocation1" value="#{BKDCbean.model.BKDUIDataModel.paylocation}" disabled="#{BKDCbean.model.BKDUIStateModel.paylocation}" styleClass="sm-mandatory-component" maxlength="5" readonly="false" style="position: relative; left:12px"></p:inputText>
+        </div>
+
+        <div class="ui-g-12 ui-lg-6 ui-md-12 sm-padding0 sm-margin-top0">
+
+            <p:outputLabel id="TotalpaybyCount" value="TotalpaybyCount:" style=" position:  relative"/>
+            <p:inputText id="TotalpaybyCount1" value="#{BKDCbean.model.BKDUIDataModel.totalpayatcount}" disabled="#{BKDCbean.model.BKDUIStateModel.totalpayatcount}" styleClass="sm-mandatory-component" maxlength="4" readonly="True" style="position: relative; left: 35px"></p:inputText>   
+
+        </div>
+        <div class="ui-g-12 ui-lg-12 ui-md-12"></div>
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="Package" value="Package:" style=" position: relative"/>
+
+            <p:inputText id="package1" value="#{BKDCbean.model.BKDUIDataModel.package}" disabled="#{BKDCbean.model.BKDUIStateModel.package}" styleClass="sm-mandatory-component" maxlength="4" readonly="false" style="position: relative; left:52px"></p:inputText>
+        </div>
+
+
+        <div class="ui-g-12 ui-lg-3 ui-md-12 sm-margin-top0">
+            <p:outputLabel id="Paytype" value="PayType:" style=" position:  relative"/>
+            <p:selectOneRadio id="paytype1" value="#{BKDCbean.model.BKDUIDataModel.paytype}" style=" margin-left: 75px; margin-top: -20px">
+                <f:selectItem itemLabel="Export" itemValue="Export" />
+                <f:selectItem itemLabel="Import" itemValue="Import" />
+            </p:selectOneRadio>
+            
+        </div>
+
+        <div class="ui-g-12 ui-lg-6 ui-md-12 sm-padding0 sm-margin-top0">
+
+            <p:outputLabel id="TotalAmount" value="TotalAmount:" style=" position:  relative"/>
+
+            <p:inputText id="TotalAmount1" value="#{BKDCbean.model.BKDUIDataModel.totalAmount}" disabled="#{BKDCbean.model.BKDUIStateModel.totalAmount}" styleClass="sm-mandatory-component" maxlength="4" readonly="True" style="position: relative; left: 55px"></p:inputText>   
+
+        </div>
+        <div class="ui-g-12 ui-lg-12 ui-md-12 sm-margin-top0"/>
+        <div class="ui-g-12 ui-lg-6 ui-md-12 sm-margin-top0">
+            <p:commandButton value="ADD" actionListener="#{BKDCbean.ctrl.addaction1()}" style=" position: relative;  width: 84px"></p:commandButton>
+
+            <p:commandButton value="Remove" actionListener="#{BKDCbean.ctrl.removeaction()}" style=" position: relative;  width: 84px"></p:commandButton>
+
+            <p:commandButton value="Clear" actionListener="#{BKDCbean.ctrl.clearaction()}" style=" position: relative;  width: 84px"></p:commandButton>
+        </div>
+  <div class="ui-g-12 ui-lg-12 ui-md-12 sm-margin-top0"/>
+ <div class="ui-g-12 ui-lg-10 ui-md-12 sm-margin-top0">
+            <lrp:dataTable rendered="true" id="BKD_sample" editable="true"  selectionMode="multiple" style="height:500px;"
+                           columnModel="#{BKDCbean.model.BKDUIDataModel.defaultColumnModel}" value="#{BKDCbean.model.BKDUIDataModel.getdatalist}"
+                           selection="#{BKDCbean.model.BKDUIDataModel.selecteddataList}"> 
+               
+            </lrp:dataTable>
+ </div>
+     
+    </h:form>
+</ui:composition>    
+
+
+
+
+
+
+
